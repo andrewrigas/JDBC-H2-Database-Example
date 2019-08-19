@@ -13,7 +13,7 @@ object main extends App {
 
   val createTable =
     """
-      |create table if not exists users(
+      |drop table users; create table if not exists users(
       | id int auto_increment primary key,
       | name varchar(55),
       | date timestamp with time zone
@@ -23,7 +23,7 @@ object main extends App {
   val insertToTable =
     """
       |insert into users(id,name,date)
-      |values (5,'andreas','1981-02-03 19:20:21+02:00')
+      |values (1,'andreas','1981-02-03 19:20:21+02:00')
       |""".stripMargin
 
   import org.h2.api.TimestampWithTimeZone
