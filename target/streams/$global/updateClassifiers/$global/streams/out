@@ -5,7 +5,7 @@
 [debug] resolving dependencies for configuration 'compile'
 [debug] == resolving dependencies for default#jdbch2example$sources;0.1 [compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [compile->default]
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.11.8 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master], scala-tool=[default, compile, runtime(*), master(compile), runtime, optional, optional(default), compile(*), master]}
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.11.8 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], scala-tool=[default, compile, runtime(*), master(compile), runtime, optional, optional(default), compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.8
 [debug] 	found org.scala-lang#scala-library;2.11.8 in sbt-chain
 [debug] 	[2.11.8] org.scala-lang#scala-library;2.11.8
@@ -102,6 +102,10 @@
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [compile->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [compile->master]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [compile->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [compile->runtime(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [compile->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [compile->default]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [compile->runtime]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [compile->compile]
@@ -143,13 +147,32 @@
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->master]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->runtime(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->master(compile)]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->runtime]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->default(compile)]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->runtime]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->compile(*)]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->default]
+[debug] sbt-chain: Checking cache for: dependency: org.scalatest#scalatest_2.11;3.0.8 {test=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}
+[debug] sbt-chain: module revision found in cache: org.scalatest#scalatest_2.11;3.0.8
+[debug] 	found org.scalatest#scalatest_2.11;3.0.8 in sbt-chain
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->default(compile)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->master]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test->default]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test->runtime]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test->compile]
@@ -162,6 +185,40 @@
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test->master]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scalactic#scalactic_2.11;3.0.8 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scalactic#scalactic_2.11;3.0.8
+[debug] 	found org.scalactic#scalactic_2.11;3.0.8 in sbt-chain
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->runtime(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->master(compile)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->compile(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.2.0 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.2.0
+[debug] 	found org.scala-lang.modules#scala-xml_2.11;1.2.0 in sbt-chain
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->runtime(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->master(compile)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->compile(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.8 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.8
+[debug] 	found org.scala-lang#scala-reflect;2.11.8 in sbt-chain
+[debug] 	[2.11.8] org.scala-lang#scala-reflect;2.11.8
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->runtime(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->master(compile)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->compile(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->master]
 [debug] resolving dependencies for configuration 'provided'
 [debug] == resolving dependencies for default#jdbch2example$sources;0.1 [provided]
 [debug] resolving dependencies for configuration 'optional'
@@ -354,13 +411,29 @@
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->master]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->runtime(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->master(compile)]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->runtime]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->default(compile)]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->runtime]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->compile(*)]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->default]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->default(compile)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test->master]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test->default]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test->runtime]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test->compile]
@@ -373,6 +446,30 @@
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test->master]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->runtime(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->master(compile)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->compile(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->runtime(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->master(compile)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->compile(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->runtime(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->master(compile)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->compile(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test->master]
 [debug] == resolving dependencies for default#jdbch2example$sources;0.1 [optional]
 [debug] == resolving dependencies for default#jdbch2example$sources;0.1 [provided]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->default]
@@ -380,13 +477,29 @@
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->master]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->runtime(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->master(compile)]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->runtime]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->default(compile)]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->runtime]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->compile(*)]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-library;2.11.8 [test-internal->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test-internal->default]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test-internal->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test-internal->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test-internal->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test-internal->default(compile)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test-internal->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test-internal->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalatest#scalatest_2.11;3.0.8 [test-internal->master]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test-internal->default]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test-internal->runtime]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test-internal->compile]
@@ -399,6 +512,30 @@
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test-internal->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test-internal->master]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->com.h2database#h2;1.4.199 [test-internal->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test-internal->runtime(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test-internal->master(compile)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test-internal->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test-internal->compile(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scalactic#scalactic_2.11;3.0.8 [test-internal->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test-internal->runtime(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test-internal->master(compile)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test-internal->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test-internal->compile(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang.modules#scala-xml_2.11;1.2.0 [test-internal->master]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test-internal->runtime(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test-internal->master(compile)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test-internal->runtime]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test-internal->compile]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test-internal->compile(*)]
+[debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [test-internal->master]
 [debug] resolving dependencies for configuration 'plugin'
 [debug] == resolving dependencies for default#jdbch2example$sources;0.1 [plugin]
 [debug] resolving dependencies for configuration 'pom'
@@ -462,10 +599,6 @@
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->jline#jline;2.12.1 [scala-tool->compile(*)]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->jline#jline;2.12.1 [scala-tool->master]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [scala-tool->compile]
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.8 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.8
-[debug] 	found org.scala-lang#scala-reflect;2.11.8 in sbt-chain
-[debug] 	[2.11.8] org.scala-lang#scala-reflect;2.11.8
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [scala-tool->runtime(*)]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [scala-tool->compile]
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [scala-tool->master(compile)]
@@ -475,14 +608,35 @@
 [debug] == resolving dependencies default#jdbch2example$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.8!scala-compiler.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(src)
-[debug] 	[NOT REQUIRED] com.h2database#h2;1.4.199!h2.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.8!scala-library.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.8!scala-reflect.jar(src)
-[debug] :: resolution report :: resolve 38ms :: artifacts dl 3ms
+[debug] 		tried /home/rigas/.ivy2/local/org.scalactic/scalactic_2.11/3.0.8/srcs/scalactic_2.11-sources.jar
+[debug] 		tried /home/rigas/.ivy2/local/org.scala-lang.modules/scala-xml_2.11/1.2.0/srcs/scala-xml_2.11-sources.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.8!scala-library.jar(src)
+[debug] 		tried /home/rigas/.ivy2/local/org.scalatest/scalatest_2.11/3.0.8/srcs/scalatest_2.11-sources.jar
+[debug] 	[NOT REQUIRED] com.h2database#h2;1.4.199!h2.jar(src)
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.2.0/scala-xml_2.11-1.2.0-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.8/scalatest_2.11-3.0.8-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/3.0.8/scalactic_2.11-3.0.8-sources.jar
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.8!scala-compiler.jar(src)
+[debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar(src)
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.2.0/scala-xml_2.11-1.2.0-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.2.0/scala-xml_2.11-1.2.0-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/3.0.8/scalactic_2.11-3.0.8-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/3.0.8/scalactic_2.11-3.0.8-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.8/scalatest_2.11-3.0.8-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.8/scalatest_2.11-3.0.8-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.2.0/scala-xml_2.11-1.2.0-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/3.0.8/scalactic_2.11-3.0.8-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.2.0/scala-xml_2.11-1.2.0-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/3.0.8/scalactic_2.11-3.0.8-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.11;1.2.0!scala-xml_2.11.jar(src) (226ms)
+[info] 	[SUCCESSFUL ] org.scalactic#scalactic_2.11;3.0.8!scalactic_2.11.jar(src) (226ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.8/scalatest_2.11-3.0.8-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.8/scalatest_2.11-3.0.8-sources.jar
+[info] 	[SUCCESSFUL ] org.scalatest#scalatest_2.11;3.0.8!scalatest_2.11.jar(src) (269ms)
+[debug] :: resolution report :: resolve 52ms :: artifacts dl 272ms
 [debug] 	report for default#jdbch2example$sources;0.1 compile produced in /home/rigas/IdeaProjects/JDBCH2Example/target/scala-2.11/resolution-cache/reports/default-jdbch2example$sources-compile.xml
 [debug] 	report for default#jdbch2example$sources;0.1 runtime produced in /home/rigas/IdeaProjects/JDBCH2Example/target/scala-2.11/resolution-cache/reports/default-jdbch2example$sources-runtime.xml
 [debug] 	report for default#jdbch2example$sources;0.1 test produced in /home/rigas/IdeaProjects/JDBCH2Example/target/scala-2.11/resolution-cache/reports/default-jdbch2example$sources-test.xml
@@ -494,4 +648,4 @@
 [debug] 	report for default#jdbch2example$sources;0.1 plugin produced in /home/rigas/IdeaProjects/JDBCH2Example/target/scala-2.11/resolution-cache/reports/default-jdbch2example$sources-plugin.xml
 [debug] 	report for default#jdbch2example$sources;0.1 pom produced in /home/rigas/IdeaProjects/JDBCH2Example/target/scala-2.11/resolution-cache/reports/default-jdbch2example$sources-pom.xml
 [debug] 	report for default#jdbch2example$sources;0.1 scala-tool produced in /home/rigas/IdeaProjects/JDBCH2Example/target/scala-2.11/resolution-cache/reports/default-jdbch2example$sources-scala-tool.xml
-[debug] 	resolve done (38ms resolve - 3ms download)
+[debug] 	resolve done (52ms resolve - 272ms download)

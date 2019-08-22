@@ -1,8 +1,11 @@
 package com.utilities
 
 import java.sql.{Connection, ResultSet, Statement}
+import java.time.OffsetDateTime
+import com.helper.Helper._
 
 object h2Utilities {
+
 
   def execute(query: String)(implicit conn: Connection): Boolean = {
     implicit val statement: Statement = conn.createStatement()
@@ -14,9 +17,19 @@ object h2Utilities {
     try{
       statement.executeQuery(query)
     }
-    //tryFinally(query,statement.executeQuery)
   }
 
+  def executeUpdate(query: String)(implicit conn: Connection): Int = {
+    implicit val statement = conn.createStatement()
+    tryFinally(query,statement.executeUpdate)
+  }
+
+  def insertOffer(query: String, startsAt: OffsetDateTime,endsAt: OffsetDateTime)(implicit connection: Connection): Boolean = {
+    val queryOffers = connection.prepareStatement(query)
+    queryOffers.setTimestamp(1, convertOffsetDateTimeToTimestamp(startsAt))
+    queryOffers.setTimestamp(2, convertOffsetDateTimeToTimestamp(endsAt))
+    queryOffers.execute()
+  }
   private def tryFinally[T](query: String,func: (String) => T)(implicit stm: Statement): T = {
     try{
       func(query)
@@ -24,5 +37,4 @@ object h2Utilities {
       stm.close()
     }
   }
-
 }
