@@ -75,7 +75,7 @@ object main extends App {
         |WHERE
         |((startDate > ? AND startDate < ?) OR (endDate < ? AND endDate > ?) OR (startDate <= ? AND endDate >= ?))
         |AND
-        |(dateadd(minute,7,startDate) < ? AND dateadd(minute,-7,endDate) > ? AND dateadd(minute,-7,?) != ?)
+        |(dateadd(minute,7,startDate) < ? AND dateadd(minute,-7,endDate) > ?)
         |;
         |""".stripMargin
 
@@ -89,17 +89,15 @@ object main extends App {
     queryDates.setTimestamp(6, convertOffsetDateTimeToTimestamp(endsAt))
     queryDates.setTimestamp(7, convertOffsetDateTimeToTimestamp(endsAt))
     queryDates.setTimestamp(8, convertOffsetDateTimeToTimestamp(startsAt))
-    queryDates.setTimestamp(9, convertOffsetDateTimeToTimestamp(endsAt))
-    queryDates.setTimestamp(10, convertOffsetDateTimeToTimestamp(startsAt))
     queryDates.executeQuery()
     val resultSet: ResultSet = queryDates.executeQuery()
     getDateFromResultSet(resultSet, Vector[Dates]())
   }
 
-  val StartTime = offsetDateTimeGenerator(2019,2,1,10,53)
-  val EndTime = offsetDateTimeGenerator(2019,2,1,11,8)
+  val StartTime = offsetDateTimeGenerator(2019,2,1,10,30)
+  val EndTime = offsetDateTimeGenerator(2019,2,1,10,38)
 
-  val validDates = if(EndTime.compareTo(StartTime) == 1) getDates(StartTime,EndTime) else Vector()
+  val validDates = if(EndTime.minusMinutes(7).compareTo(StartTime) == 1) getDates(StartTime,EndTime) else Vector()
 
   println(validDates.size)
   for(date <- validDates) println(date)
